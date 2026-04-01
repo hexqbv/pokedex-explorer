@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Pokédex Explorer</h1>
+
+    <!-- Search -->
+    <input type="text" id="search" placeholder="Search Pokémon...">
+
+    <!-- Filter -->
+    <select id="filter">
+        <option value="">All Types</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+    </select>
+
+    <!-- Sort -->
+    <select id="sort">
+        <option value="">Sort By</option>
+        <option value="name">Name</option>
+    </select>
+
+    <!-- Cards -->
+    <div id="pokemon-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
