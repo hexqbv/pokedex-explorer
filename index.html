@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex Explorer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="top-bar">
+        <h1>Simple Pokedex</h1>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+          Dark Mode
+        </button>
+      </header>
 
-    <h1>Pokédex Explorer</h1>
+      <section class="controls">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search by name..."
+          aria-label="Search Pokemon by name"
+        />
 
-    <!-- Search -->
-    <input type="text" id="search" placeholder="Search Pokémon...">
+        <select id="typeFilter" aria-label="Filter Pokemon by type">
+          <option value="all">All Types</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="grass">Grass</option>
+          <option value="electric">Electric</option>
+        </select>
 
-    <!-- Filter -->
-    <select id="filter">
-        <option value="">All Types</option>
-        <option value="fire">Fire</option>
-        <option value="water">Water</option>
-        <option value="grass">Grass</option>
-        <option value="electric">Electric</option>
-    </select>
+        <select id="sortSelect" aria-label="Sort Pokemon by name">
+          <option value="az">Name: A to Z</option>
+          <option value="za">Name: Z to A</option>
+        </select>
+      </section>
 
-    <!-- Sort -->
-    <select id="sort">
-        <option value="">Sort By</option>
-        <option value="name">Name</option>
-    </select>
-
-    <!-- Cards -->
-    <div id="pokemon-container"></div>
+      <section id="pokemonGrid" class="pokemon-grid"></section>
+    </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
