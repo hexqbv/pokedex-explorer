@@ -3,6 +3,8 @@
 ## 📌 Description
 Simple Pokédex is a web application that allows users to explore Pokémon data using a clean and interactive interface. It fetches real-time data from the PokéAPI and provides features like search, filtering, sorting, and interactive card expansion.
 
+🔗 **Live Demo:** https://pokedex-explorer-phi.vercel.app/
+
 ---
 
 ## 🚀 Features
@@ -54,7 +56,7 @@ Simple Pokédex is a web application that allows users to explore Pokémon data 
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ How to Run Locally
 1. Clone the repository:
    ```bash
    git clone https://github.com/hexqbv/pokedex-explorer
